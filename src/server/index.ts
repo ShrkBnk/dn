@@ -11,6 +11,7 @@ const path = require("path");
 const publicPath = path.join(__dirname, "public");
 const port = process.env.PORT || 8888;
 const app = Express();
+const cors = require("cors");
 
 app.use(
   bodyParser.urlencoded({
@@ -19,6 +20,10 @@ app.use(
 );
 
 app.use(bodyParser.json());
+
+app.options('*', cors())
+
+app.use(cors());
 
 const services = () => {
   app.get("/api/checkExistence/:city", checkDbCity);
