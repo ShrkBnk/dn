@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "es6",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "moduleResolution": "node",
+    "jsx": "react",
+    "baseUrl": "src",
+    "lib": ["es6", "dom", "ESNext.String"],
+  },
+  "include": ["src"]
+}

@@ -1,0 +1,12 @@
+# dependencies
+/node_modules
+
+# misc
+.env
+
+# production
+/build
+
+.idea
+/package-lock.json
+debug.log
